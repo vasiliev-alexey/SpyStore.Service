@@ -1,0 +1,20 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+  "use_db_type": "pg",
+  "pg_host": "db_host",
+  "pg_port": "65432",
+  "pg_user": "spystore",
+  "pg_pass": "spystore",
+  "pg_db": "spy_store",
+  "pg_search": "spy_store"
+
+
+
+}

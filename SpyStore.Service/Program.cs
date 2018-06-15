@@ -26,6 +26,12 @@ namespace SpyStore.Service
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseApplicationInsights()
+               //требуется для core > 2.0
+               /*
+               см  https://blogs.msdn.microsoft.com/dotnet/2017/05/12/announcing-ef-core-2-0-preview-1/
+                */
+
+               .UseDefaultServiceProvider(options =>options.ValidateScopes = false)
                 .Build();
 
             return host;
